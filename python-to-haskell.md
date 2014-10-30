@@ -1,5 +1,3 @@
-slidenumbers: true
-
 ![right](pycon.png)
 
 # from the first love to a serious relationship
@@ -253,13 +251,47 @@ def test():
 
 ---
 
+# `(>>=)`
+
+* pure functions: `(+) :: Int -> Int -> Int`
+* combinators: `fix f = f (fix f)`
+* HOFs: `unwords . map (++ ",") . words`
+* pattern matching: `case x of Just y -> y`
+* ADTs:
+
+```haskell
+data Tree a = Branch a (Tree a) (Tree a)
+            | Leaf
+            deriving (Functor)
+```
+
+* persistent data structures
+
+--- 
+
+![](http://blog.ezyang.com/img/heap/evaluation.png)
+
+# [fit] [Lazy evaluation](http://blog.ezyang.com/2011/04/the-haskell-heap/)
+# STG-machine
+
+^ strict / eager evaluation - order of execution is bound by source code organization
+
+---
+
 ![fit right](http://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Commutative_diagram_for_morphism.svg/2000px-Commutative_diagram_for_morphism.svg.png)
 
 # category theory
 
 ---
 
-![fit](http://www.quickmeme.com/img/c9/c94711e0f933eb488e0cb0baa9d3eff1888a27ead4fd6089fd37d8f7d8f45a97.jpg)
+* functors `<$>`
+* semigroups `+`
+* applicatives `<*>`
+* monoids `0 +`
+* monads `>>=`
+
+![inline 100%](http://adit.io/imgs/functors/applicative_just.png)
+
 
 ^ THE THREE MONAD LAWS
 ^ 
@@ -270,32 +302,10 @@ def test():
 
 ---
 
-* Pattern matching `case x of Just y -> y`
-* HOFs `unwords . map (++ ",") . words`
-* Combinators `fix f = f (fix f)`
+> I don't use mathematics for the sake of using mathematics. The purpose behind structuring programs mathematically is to compose small bits of mathematical functionality, each of which is correct in isolation, to build larger mathematical structures which are still correct.
 
---- 
+-- [haskellforall.com](http://www.haskellforall.com/2014/06/spreadsheet-like-programming-in-haskell.html?showComment=1402844512192#c4741783835572817187)
 
-# Lazy evaluation
-## STG-machine
-
----
-
-# ADTs
-
-```
-data Tree a = Branch a (Tree a) (Tree a)
-            | Leaf
-            deriving (Functor)
-```
-
----
-
-* functors `<$>`
-* semigroups `+`
-* applicatives `<*>`
-* monoids `0 +`
-* monads `>>=`
 
 ---
 
@@ -328,23 +338,64 @@ data Tree a = Branch a (Tree a) (Tree a)
 
 ---
 
-^ impendance mismatch, devops
+![](tangledops.png)
 
 ---
 
-# free monads
-# free applicatives
-# EDSL
-# rich metaprogramming
-# quasi quoting (php + sql + html + css on one page anyone?)
+![](make.png)
+
+---
+
+```haskell
+newtype Process = Process ByteString
+newtype Host = Host ByteString
+newtype Addr = Addr (IP, ByteString)
+
+data OpenFile = Connection Host Process Addr Addr 
+               | Listen Host Process Addr
+
+data IP = IP ByteString
+        | Any 
+
+type IPMap = Map IP Host
+```
+
+---
+
+![inline fit](https://camo.githubusercontent.com/4dc1b19b48757cbeb9d1eb2c2a8074b20676f5ec/687474703a2f2f692e696d6775722e636f6d2f48593247746b352e706e67)
+
+### https://github.com/zalora/upcast
+
+---
+
+# DSL-driven development
+
+* Free applicatives
+* Free monads
+* rich metaprogramming
+* quasi quoting (php + sql + html + css on one page anyone?)
+* template haskell
+* generics
 
 ^ evaluation vs data
 ^ money / aws
-^ template haskell / generics
 
 ---
 
-# `haxl` slide
+![](haxl.png)
+
+# [fit] haxl
+### https://github.com/facebook/Haxl
+
+---
+
+```haskell
+numCommonFriends x y =
+    length <$> (intersect <$> friendsOf x <*> friendsOf y)
+
+λ :t (<*>)
+(<*>) :: Applicative f => f (a -> b) -> f a -> f b
+```
 
 ---
 
@@ -372,12 +423,6 @@ data Tree a = Branch a (Tree a) (Tree a)
 
 # [fit] computer science
 # [fit] as the first class citizen
-
----
-
-> I don't use mathematics for the sake of using mathematics. The purpose behind structuring programs mathematically is to compose small bits of mathematical functionality, each of which is correct in isolation, to build larger mathematical structures which are still correct.
-
--- [haskellforall.com](http://www.haskellforall.com/2014/06/spreadsheet-like-programming-in-haskell.html?showComment=1402844512192#c4741783835572817187)
 
 ---
 
