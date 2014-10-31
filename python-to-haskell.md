@@ -10,6 +10,9 @@
 
 # based on a true story
 
+^ i am doing devops, doing infrastructure programming
+^ web development; stuff
+
 ---
 
 ![fit](django.png)
@@ -89,7 +92,7 @@
 ![fit](http://cdn.alltheragefaces.com/img/faces/large/neutral-feel-like-a-sir-clean-l.png)
 ![fit](http://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Graduation_hat.svg/500px-Graduation_hat.svg.png)
 ![fit](http://th09.deviantart.net/fs71/PRE/f/2011/246/2/5/macbook_pro_vector_by_black__werewolf-d48pz1u.png)
-# Education
+# [fit] Education
 
 ---
 
@@ -101,33 +104,48 @@
 
 ---
 
-# food
-
-## [fit] killing animals :arrow_right: growing :arrow_right: markets :arrow_right: supermarkets
-
----
-
-### [fit] computing!
+# [fit] food
+# [fit] hunting :arrow_right: growing
+# [fit] :arrow_right: supermarkets
 
 ---
 
 # [fit] abstraction
 ## [fit] ignoring _irrelevant_ details
-
-^ important that you don't hold on to old traditions
-
----
-
-![](http://www.afroautos.com/wp-content/uploads/2014/10/Chev-dash.jpg)
+### old skills become impediment in the new world
 
 ---
 
-# old skills become impediment in the new world
+![](fireman.jpg)
 
-* milkman :arrow_right: milk chain employee
-* system/network/database admin :arrow_right: devops
+---
 
-^ will get back to devops soon
+![](fireman.jpg)
+
+# special human throwing coal into a big burning hole
+
+---
+
+![](carinterior.jpeg)
+
+---
+
+![](carinterior.jpeg)
+
+# wheel
+# pedals
+## *gear stick*
+
+---
+
+![](http://dangreenblatt.com/blog/wp-content/uploads/2008/08/twitter-fail-whale.png)
+
+---
+
+![](http://dangreenblatt.com/blog/wp-content/uploads/2008/08/twitter-fail-whale.png)
+
+# [fit] cloud computing
+# [fit] distributed systems
 
 --- 
 
@@ -174,24 +192,16 @@ d = requests.get(url)
 
 ![fit](latencies.png)
 
+^ # [Systems Performance: Enterprise and the Cloud](http://www.brendangregg.com/sysperfbook.html)
+^ ## (have i told you that book is awesome yet?)
+
 ---
 
 ![fit](latencies.png)
 
-# [Systems Performance: Enterprise and the Cloud](http://www.brendangregg.com/sysperfbook.html)
-## (have i told you that book is awesome yet?)
+# stuff taking time[^!] can no longer be implicit
 
----
-
-![](http://dangreenblatt.com/blog/wp-content/uploads/2008/08/twitter-fail-whale.png)
-
-^ the cloud
-
----
-
-![](http://dangreenblatt.com/blog/wp-content/uploads/2008/08/twitter-fail-whale.png)
-
-# [fit] distributed systems
+[^!]: [Systems Performance: Enterprise and the Cloud](http://www.brendangregg.com/sysperfbook.html)
 
 ---
 
@@ -214,6 +224,8 @@ def test():
 
 ![right fit](http://www.reactionface.info/sites/default/files/images/1287666826226.png)
 # [fit] python 3
+
+^ on another note, python 3 broke everything so i became bored and walked away
 
 ---
 
@@ -274,7 +286,8 @@ data Tree a = Branch a (Tree a) (Tree a)
 # [fit] [Lazy evaluation](http://blog.ezyang.com/2011/04/the-haskell-heap/)
 # STG-machine
 
-^ strict / eager evaluation - order of execution is bound by source code organization
+^ strict / eager evaluation - order of execution is bound by source code organization (call order)
+^ lazy - execution by evaluation order
 
 ---
 
@@ -335,6 +348,16 @@ data Tree a = Branch a (Tree a) (Tree a)
 ---
 
 ![](http://www.babylessons.ru/wp-content/uploads/2010/10/163.jpg)
+
+---
+
+# [fit] shell
+![right fit](http://bestinclassschoolsupplies.com/images/16205.jpg)
+
+---
+
+# [fit] haskell
+![right fit](gluegun.png)
 
 ---
 
@@ -399,37 +422,41 @@ numCommonFriends x y =
 
 ---
 
-# operational stuff
-
-* static binaries once in a while
-
----
-
-# [fit] haskell and glue
-
----
-
 # testing
 
-* quickcheck
 * types
-* tdd doesn't go away
+* quickcheck
+* can still do tdd if you like writing tests
+* just ship it `:)`
+
+---
+
+# doing ops
+
+* static binaries!
+* `RTS` is C
+* imporved IO manager in `7.8`
+* lazy evaluation impedes Intel reality
+    * (say something bad about callbacks here)
+    * extended `DWARF` support coming in `7.10`
+    * [more stuff about GHC/RTS stacks](https://github.com/blitzcode/ghc-stack)
 
 --- 
 
-# community
+# **community** is awesome
 
----
-
-# [fit] computer science
-# [fit] as the first class citizen
+### you can find many (ex-)python folks there
 
 ---
 
 # take away
 
-* `fn.py`
+* haskell is different, opens a door to the new cool and crazy
+* computer science as the first class citizen
+* using haskell makes you use python differently
+* [fn.py](https://github.com/kachayev/fn.py)
 
 ---
 
-# [fit] kthxbai
+# kthxbai
+## ask me anything
