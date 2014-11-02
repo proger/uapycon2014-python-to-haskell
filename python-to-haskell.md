@@ -1,8 +1,19 @@
+
+
+
+
+
+
 ![right](pycon.png)
 
 # from the first love to a serious relationship
 ## `pycon ukraine 2014`
 ### [@darkproger](http://twitter.com/darkproger)
+
+
+
+
+
 
 ---
 
@@ -11,15 +22,18 @@
 # based on a true story
 
 ^ i am doing devops, doing infrastructure programming
-^ web development; stuff
-
----
-
-![fit](django.png)
 
 ---
 
 # Python is awesome
+
+^  pycon is a con about pretty much everything except python
+  
+---
+
+![fit](django.png)
+
+^ use django -- your websites look cool by default
 
 ---
 
@@ -62,11 +76,19 @@
 
 # other uses
 
-* avoiding c++
+* __data robots, apparently__
 * scientific computing, machine learning, etc
 * desktop GUIs
-* build tools
+* build tools, system hacking
 * ad-hoc automation, scripts
+
+
+---
+
+# [fit] so why even bother looking elsewhere?
+
+^ need for challenge; 
+  will explain my motivation
 
 ---
 
@@ -74,9 +96,10 @@
 # [fit] movember
 
 ^ Most of us take shaving for granted
-  - you can buy shavers with lots of blades
-  - if you look at the history shaving was hard -- it was done with a knife and required a special person attached to it
-  - shaving has been democratized
+  movember - men's health awareness
+  you can buy shavers with lots of blades
+  if you look at the history shaving was hard -- it was done with a knife and required a special person attached to it
+  shaving has been democratized
 
 ---
 
@@ -113,6 +136,10 @@
 # [fit] abstraction
 ## [fit] ignoring _irrelevant_ details
 ### old skills become impediment in the new world
+
+^ don't attach to old traditions
+  ; people have to change the way they work
+  ; consider transportation
 
 ---
 
@@ -188,12 +215,13 @@ c = open('/System/Library/Kernels/kernel').read()
 d = requests.get(url)
 ```
 
+^ started suspecting something
+
 ---
 
 ![fit](latencies.png)
 
-^ # [Systems Performance: Enterprise and the Cloud](http://www.brendangregg.com/sysperfbook.html)
-^ ## (have i told you that book is awesome yet?)
+^ [Systems Performance: Enterprise and the Cloud](http://www.brendangregg.com/sysperfbook.html)
 
 ---
 
@@ -231,6 +259,8 @@ def test():
 
 ![fill](journey.jpg)
 
+^ my journey begins
+
 ---
 
 ![fit](themovie.png)
@@ -254,12 +284,18 @@ def test():
 
 ---
 
-![](http://i4.mirror.co.uk/incoming/article1592688.ece/alternates/s2197/160757701.jpg)
+# [fit] `(>>=)`
+
+^ hear about that language (advanced calculus)
+  google it
 
 ---
 
 ![](http://i4.mirror.co.uk/incoming/article1592688.ece/alternates/s2197/160757701.jpg)
-# `(>>=)`
+
+---
+
+![](http://replygif.net/i/588.gif)
 
 ---
 
@@ -287,7 +323,7 @@ data Tree a = Branch a (Tree a) (Tree a)
 # STG-machine
 
 ^ strict / eager evaluation - order of execution is bound by source code organization (call order)
-^ lazy - execution by evaluation order
+  lazy - execution by evaluation order
 
 ---
 
@@ -307,11 +343,10 @@ data Tree a = Branch a (Tree a) (Tree a)
 
 
 ^ THE THREE MONAD LAWS
-^ 
-^ A monad may not injure a human being or, through inaction, allow a human being to come to harm.
-^ A monad must obey the orders given to it by human beings, except where such orders would conflict with the First Law.
-^ A monad must protect its own existence as long as such protection does not conflict with the First or Second Laws.
-^ http://bodil.org/hipster/#/43
+  
+  A monad may not injure a human being or, through inaction, allow a human being to come to harm.
+  A monad must obey the orders given to it by human beings, except where such orders would conflict with the First Law.
+  A monad must protect its own existence as long as such protection does not conflict with the First or Second Laws.
 
 ---
 
@@ -389,19 +424,20 @@ type IPMap = Map IP Host
 
 ### https://github.com/zalora/upcast
 
+^ evaluation vs data
+  money / aws
+
 ---
 
 # DSL-driven development
 
 * Free applicatives
 * Free monads
-* rich metaprogramming
 * quasi quoting (php + sql + html + css on one page anyone?)
 * template haskell
 * generics
 
-^ evaluation vs data
-^ money / aws
+^ rich metaprogramming
 
 ---
 
@@ -449,14 +485,13 @@ numCommonFriends x y =
 
 ---
 
-# take away
-
-* haskell is different, opens a door to the new cool and crazy
-* computer science as the first class citizen
-* using haskell makes you use python differently
-* [fn.py](https://github.com/kachayev/fn.py)
+# Python:
+# "Easy things are easy, hard things are possible"
+#
+# Haskell:
+# "Hard things are easy, the impossible just happened"
 
 ---
 
 # kthxbai
-## ask me anything
+## <3
